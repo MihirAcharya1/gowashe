@@ -10804,7 +10804,7 @@ progress {
     --scale: 1;
     --body-bg: #fff;
     --body-color: #042825;
-    --transition-duration: 600ms
+    --transition-duration: 100ms
 }
 
 @media(min-width: 1500px) {
@@ -10962,6 +10962,8 @@ body.single-project .testimonial-content {
     left: 0;
     width: 100%;
     z-index: 999;
+    background-color: #042825;
+    padding-top: 15px;
     -webkit-transition: background var(--transition-duration) ease, -webkit-transform var(--transition-duration) ease;
     transition: background var(--transition-duration) ease, -webkit-transform var(--transition-duration) ease;
     -o-transition: transform var(--transition-duration) ease, background var(--transition-duration) ease;

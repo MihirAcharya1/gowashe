@@ -18,6 +18,7 @@
 }
 
 body {
+    font-family: "Lota Grotesque";
     --wp--preset--color--black: #121212;
     --wp--preset--color--cyan-bluish-gray: #abb8c3;
     --wp--preset--color--white: #ffffff;
