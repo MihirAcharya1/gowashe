@@ -8,12 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="GOWASHE, gowashexpert@gmail.com">
 
-	<link rel="apple-touch-icon" sizes="180x180"
-		href="src/webLogo.png">
-	<link rel="icon" type="image/png" sizes="32x32"
-		href="src/water-spray-icon.png">
-	<link rel="icon" type="image/png" sizes="16x16"
-		href="src/water-spray-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="src/webLogo.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="src/water-spray-icon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="src/water-spray-icon.png">
 	<link rel="shortcut icon" href="src/water-spray-icon.png">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
@@ -32,47 +29,112 @@
 	<script src="script.js"></script>
 
 	<style>
-        .card-container {
-
-            width: 400px;
-			height: 500px;
+		.card-container {
+			width: fit-content;
+			height: auto;
 			float: right;
+			margin: 2%;
+			margin-top: 0;
+			display: none;
 
-        }
+		}
 
-        .card {
-            text-align: center;
-            padding: 1.875rem 3rem;
-            background-image: linear-gradient(45deg,#042825,rgba(255, 255, 255, 0.384),#042825);
-            display: grid;
-            border-radius: 20px;
-            grid-template-rows: auto;
-            grid-row-gap: .5rem;
-        }
+		@media only screen and (min-width:480px) {
+			.card-container {
+				display: inline;
+			}
+		}
 
-        .card-h2 {
-            letter-spacing: .0063rem;
-            font-size: 2rem;
-            font-weight: 700;
-        }
+		.card {
+			width: fit-content;
+			margin: 15px;
+			text-align: center;
+			/* background-image: linear-gradient(45deg,#042825,rgba(255, 255, 255, 0.384),#042825); */
+			display: grid;
+			background-color: white;
+			border-radius: 20px;
+			grid-template-rows: auto;
+			grid-row-gap: .5rem;
+			padding: 4%;
 
-        .number-int {
-            height: 35px;
-            text-align: center;
-            font-size: large;
-            font-family: monospace;
-            border-color: rgb(168, 252, 129);
-            border-radius: 10px;
-        }
-        .number-int2 {
-            height: 35px;
-            text-align: center;
-            font-size: large;
-            font-family: monospace;
-            border-color: rgb(168, 252, 129);
-            border-radius: 10px;
-        }
-    </style>
+
+		}
+
+		.card-h2 {
+			letter-spacing: .0063rem;
+			font-size: 1rem;
+			font-weight: 600;
+			padding: 10px;
+		}
+	</style>
+	<style>
+		/*the container must be positioned relative:*/
+		.custom-select {
+		  position: relative;
+		  font-family: monospace;
+		
+		  
+		
+		}
+		
+		.custom-select select {
+			
+		  display: none; 
+		  
+		  /*hide original SELECT element:*/
+		}
+		
+		.select-selected {
+		  background-color: DodgerBlue;
+		}
+		
+		/*style the arrow inside the select element:*/
+		.select-selected:after {
+		  position: absolute;
+		  content: "";
+		  top: 14px;
+		  right: 10px;
+		  width: 0;
+		  height: 0;
+		  border: 2px solid transparent;
+		  border-color: #fff transparent transparent transparent;
+		}
+		
+		/*point the arrow upwards when the select box is open (active):*/
+		.select-selected.select-arrow-active:after {
+		  border-color: transparent transparent #fff transparent;
+		  top: 7px;
+		}
+		
+		/*style the items (options), including the selected item:*/
+		.select-items div,.select-selected {
+		  color: #ffffff;
+		  padding: 8px 16px;
+		  border: 1px solid transparent;
+		  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+		  cursor: pointer;
+		  user-select: none;
+		}
+		
+		/*style items (options):*/
+		.select-items {
+		  position: absolute;
+		  background-color: DodgerBlue;
+		  top: 100%;
+		  left: 0;
+		  right: 0;
+		  z-index: 99;
+		}
+		
+		/*hide the items when the select box is closed:*/
+		.select-hide {
+		  display: none;
+		}
+		
+		.select-items div:hover, .same-as-selected {
+		  background-color: rgba(0, 0, 0, 0.1);
+		}
+		</style> 	
 	<!-- End Google Tag Manager -->
 
 	<!-- Leadfeeder -->
@@ -130,7 +192,7 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 	<!-- <meta name="twitter:label1" content="Est. reading time" /> -->
 	<!-- <meta name="twitter:data1" content="2 minutes" /> -->
 	<script type="application/ld+json"
-	class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://mihiracharya1.github.io/gowashe/","url":"https://mihiracharya1.github.io/gowashe/","name":"We are proffesional auto wash and detailing, people- friendly digital experiences.","isPartOf":{"@id":"https://bb.agency/#website"},"primaryImageOfPage":{"@id":"https://bb.agency/#primaryimage"},"image":{"@id":"https://bb.agency/#primaryimage"},"thumbnailUrl":"https://github.com/MihirAcharya1/gowashe/blob/main/src/refImage.png","datePublished":"2022-06-09T11:42:16+00:00","dateModified":"2023-02-09T12:11:11+00:00","description":"BB Agency is a strategic partner for fast-growing companies in need of a scalable website with modular CMS, design system, and brand identity.","breadcrumb":{"@id":"https://bb.agency/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://bb.agency/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://bb.agency/#primaryimage","url":"https://bb.agency/wp-content/uploads/2022/08/Home.png","contentUrl":"https://bb.agency/wp-content/uploads/2022/08/Home.png","width":600,"height":314},{"@type":"BreadcrumbList","@id":"https://bb.agency/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://bb.agency/#website","url":"https://bb.agency/","name":"BB Agency","description":"Human Experience Design and Development Agency","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://bb.agency/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://mihiracharya1.github.io/gowashe/","url":"https://mihiracharya1.github.io/gowashe/","name":"We are proffesional auto wash and detailing, people- friendly digital experiences.","isPartOf":{"@id":"https://bb.agency/#website"},"primaryImageOfPage":{"@id":"https://bb.agency/#primaryimage"},"image":{"@id":"https://bb.agency/#primaryimage"},"thumbnailUrl":"https://github.com/MihirAcharya1/gowashe/blob/main/src/refImage.png","datePublished":"2022-06-09T11:42:16+00:00","dateModified":"2023-02-09T12:11:11+00:00","description":"BB Agency is a strategic partner for fast-growing companies in need of a scalable website with modular CMS, design system, and brand identity.","breadcrumb":{"@id":"https://bb.agency/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://bb.agency/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://bb.agency/#primaryimage","url":"https://bb.agency/wp-content/uploads/2022/08/Home.png","contentUrl":"https://bb.agency/wp-content/uploads/2022/08/Home.png","width":600,"height":314},{"@type":"BreadcrumbList","@id":"https://bb.agency/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://bb.agency/#website","url":"https://bb.agency/","name":"BB Agency","description":"Human Experience Design and Development Agency","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://bb.agency/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
 	<!-- / Yoast SEO Premium plugin. -->
 
 	<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
@@ -165,9 +227,9 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 
 		/* ]]> */
 	</script>
-	<script async type='text/javascript'
+	<!-- <script async type='text/javascript'
 		src='https://bb.agency/wp-content/plugins/cookie-notice/js/front.min.js?ver=2.4.6'
-		id='cookie-notice-front-js'></script>
+		id='cookie-notice-front-js'></script> -->
 	<link rel="https://api.w.org/" href="https://bb.agency/wp-json/" />
 	<link rel="alternate" type="application/json" href="https://bb.agency/wp-json/wp/v2/pages/2" />
 </head>
@@ -225,150 +287,245 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 			style="--bg-color:#042825;--text-color:#ffffff;padding-top:calc(70px*var(--scale));padding-bottom:calc(200px*var(--scale));"
 			class="block-grid is-style-default apply-colors-to-body has-colors-set is-style-default wp-block-bb-agency-grid"
 			id="test-1">
-			<div class="container"></div>
+			<div class="container">
+				<form action="#" class="card-container" data-aos="fade-down" data-aos-duration="1000"
+					data-aos-delay="250">
+					<div class="card">
+						<h2 class="card-h2">
+							<strong style="color: rgb(0, 186, 0);">GO</strong><strong
+								style="color: #00a99d;">WASH</strong><strong style="color: red;">E</strong>
+						</h2>
+						<script>
+							var x, i, j, l, ll, selElmnt, a, b, c;
+							/*look for any elements with the class "custom-select":*/
+							x = document.getElementsByClassName("custom-select");
+							l = x.length;
+							for (i = 0; i < l; i++) {
+								selElmnt = x[i].getElementsByTagName("select")[0];
+								ll = selElmnt.length;
+								/*for each element, create a new DIV that will act as the selected item:*/
+								a = document.createElement("DIV");
+								a.setAttribute("class", "select-selected");
+								a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+								x[i].appendChild(a);
+								/*for each element, create a new DIV that will contain the option list:*/
+								b = document.createElement("DIV");
+								b.setAttribute("class", "select-items select-hide");
+								for (j = 1; j < ll; j++) {
+									/*for each option in the original select element,
+									create a new DIV that will act as an option item:*/
+									c = document.createElement("DIV");
+									c.innerHTML = selElmnt.options[j].innerHTML;
+									c.addEventListener("click", function (e) {
+										/*when an item is clicked, update the original select box,
+										and the selected item:*/
+										var y, i, k, s, h, sl, yl;
+										s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+										sl = s.length;
+										h = this.parentNode.previousSibling;
+										for (i = 0; i < sl; i++) {
+											if (s.options[i].innerHTML == this.innerHTML) {
+												s.selectedIndex = i;
+												h.innerHTML = this.innerHTML;
+												y = this.parentNode.getElementsByClassName("same-as-selected");
+												yl = y.length;
+												for (k = 0; k < yl; k++) {
+													y[k].removeAttribute("class");
+												}
+												this.setAttribute("class", "same-as-selected");
+												break;
+											}
+										}
+										h.click();
+									});
+									b.appendChild(c);
+								}
+								x[i].appendChild(b);
+								a.addEventListener("click", function (e) {
+									/*when the select box is clicked, close any other select boxes,
+									and open/close the current select box:*/
+									e.stopPropagation();
+									closeAllSelect(this);
+									this.nextSibling.classList.toggle("select-hide");
+									this.classList.toggle("select-arrow-active");
+								});
+							}
+							function closeAllSelect(elmnt) {
+								/*a function that will close all select boxes in the document,
+								except the current select box:*/
+								var x, y, i, xl, yl, arrNo = [];
+								x = document.getElementsByClassName("select-items");
+								y = document.getElementsByClassName("select-selected");
+								xl = x.length;
+								yl = y.length;
+								for (i = 0; i < yl; i++) {
+									if (elmnt == y[i]) {
+										arrNo.push(i)
+									} else {
+										y[i].classList.remove("select-arrow-active");
+									}
+								}
+								for (i = 0; i < xl; i++) {
+									if (arrNo.indexOf(i)) {
+										x[i].classList.add("select-hide");
+									}
+								}
+							}
+							/*if the user clicks anywhere outside the select box,
+							then close all select boxes:*/
+							document.addEventListener("click", closeAllSelect);
+						</script>
+						<div class="custom-select" style="width:100%; border-radius: 10px;">
+							<select style="height: 50px; border-radius: 10px;">
+							  <option value="0" style="text-align: center; width: 200px;">Select vehicle</option>
+							  <option value="1" style="text-align: center; width: 200px;">Bike</option>
+							  <option value="2" style="text-align: center; width: 200px;">CAR</option>
+							  <option value="3" style="text-align: center; width: 200px;">Heavy vehicle</option>
+							  
+							</select>
+						  </div>
+						
+						<div> <input type="text" id="Location" style="display: inline-block; width: 220px;
+						height: 45px;border-radius: 10px;
+					   text-align: center; font-family: monospace;
+						border-color: rgb(168, 252, 129); box-sizing: 3px;" placeholder="Your Address"><img src="src/location-icon.png"
+								style="width: 50px; height: 50px; cursor:crosshair;" alt=""> </div>
 
-				<h1 class="max-width-lg-100 max-width-md-100 max-width-sm-100"
-					id="h-we-craft-holistic-people-friendly-digital-experiences"
-					style="max-width:calc(900px*var(--scale));margin-bottom:calc(40px*var(--scale))"
-					data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">We are proffesional auto wash and
-					detailing, people- friendly digital experiences.</h1>
-					<div class="card-container">
-						<div class="card">
-							<h2 class="card-h2"
-								style="padding:10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-								<strong style="color: rgb(0, 186, 0);">GO</strong><strong style="color: #00a99d;">WASH</strong><strong
-									style="color: red;">E</strong>
-							</h2>
-							<p><label><input class="number-int" type="text" id="cl-number" placeholder="Your Number"></label>
-							</p>
-							<p><label><input class="number-int2" type="text" id="" placeholder="Your Number"
-										style="height: 35px; text-align: center; font-size: large; font-family: monospace; border-color: rgb(168, 252, 129); border-radius: 10px;"></label>
-							</p>
-				
-						</div>
-				
+						<p><label style="display: inline-block;"><input class="number-int2" type="text"
+									id="user-mobile-number" placeholder="Your Number"
+									style="width:100%; height:45px; text-align: center; font-family: monospace; border-color: rgb(168, 252, 129); border-radius: 10px; box-sizing: 3px;"></label>
+						</p>
+						<button
+							style="border-radius:10px; width: 100%;background-color: #042825;padding: 5px; border-color:#fff;"><strong
+								style="color:white;">Buy Plan</strong></button>
+
+
 					</div>
+				</form>
+
+			</div>
+
+			<h1 class="max-width-lg-100 max-width-md-100 max-width-sm-100"
+				id="h-we-craft-holistic-people-friendly-digital-experiences"
+				style="max-width:calc(900px*var(--scale));margin-bottom:calc(40px*var(--scale))" data-aos="fade-down"
+				data-aos-duration="1000" data-aos-delay="0">We are proffesional auto wash and
+				detailing, people- friendly digital experiences.</h1>
 
 
 
-				<p class="is-style-default has-large-font-size max-width-md-100 max-width-sm-100"
-					style="max-width:calc(730px*var(--scale))" data-aos="fade-down" data-aos-duration="1000"
-					data-aos-delay="150">GOWASHE is the leader in on-demand washing and detailing services. GOWASHE,
-					your car wash app, is the most convenient and cost-effective way to wash your car. Instead of having
-					to drive to a car wash and then wait in line, you can simply download the app, schedule a time, and
-					the mobile car wash will come to you.
-					
-				</p>
-				
 
-				<!-- <a data-type="page" data-id="385" href="https://bb.agency/services/saas-websites/">website with modular CMS</a>, 
+			<p class="is-style-default has-large-font-size max-width-md-100 max-width-sm-100"
+				style="max-width:calc(730px*var(--scale))" data-aos="fade-down" data-aos-duration="1000"
+				data-aos-delay="150">GOWASHE is the leader in on-demand washing and detailing services. GOWASHE,
+				your car wash app, is the most convenient and cost-effective way to wash your car. Instead of having
+				to drive to a car wash and then wait in line, you can simply download the app, schedule a time, and
+				the mobile car wash will come to you.
+
+			</p>
+
+
+			<!-- <a data-type="page" data-id="385" href="https://bb.agency/services/saas-websites/">website with modular CMS</a>, 
 		a <a data-type="page" data-id="105" href="https://bb.agency/services/">design system</a>, 
 		and future-proof <a data-type="page" data-id="105" href="https://bb.agency/services/">brand identity</a> -->
 
-				<div class="is-layout-flow wp-block-group" style="margin-top:calc(120px*var(--scale))"
-					data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">
-					<div class="video-modal-wrapper wp-block-bb-agency-video-modal">
+			<div class="is-layout-flow wp-block-group" style="margin-top:calc(120px*var(--scale))" data-aos="fade-down"
+				data-aos-duration="1000" data-aos-delay="150">
+				<div class="video-modal-wrapper wp-block-bb-agency-video-modal">
 
-						<div class="video-modal__preview ">
-							<video muted autoplay loop>
-								<source src="https://bb.agency/wp-content/uploads/2023/01/showcase.webm"
-									type="video/webm">
-								<source>
-								<source src="https://bb.agency/wp-content/uploads/2022/06/showcase.mp4"
-									type="video/mp4">
-								<source>
-							</video>
-							<div class="play-video-btn" data-fancybox data-src="https://vimeo.com/465414188">
-								<i class="icon-play"></i>
-							</div>
+					<div class="video-modal__preview ">
+						<video muted autoplay loop>
+							<source src="https://bb.agency/wp-content/uploads/2023/01/showcase.webm" type="video/webm">
+							<source>
+							<source src="https://bb.agency/wp-content/uploads/2022/06/showcase.mp4" type="video/mp4">
+							<source>
+						</video>
+						<div class="play-video-btn" data-fancybox data-src="https://vimeo.com/465414188">
+							<i class="icon-play"></i>
 						</div>
-
 					</div>
 
 				</div>
 
-
-
-				<div class="is-layout-flow wp-container-3 wp-block-group has-heading-2-font-size max-width-md-100 max-width-sm-100"
-					style="max-width:calc(920px*var(--scale));margin-top:calc(120px*var(--scale));margin-left:auto">
-					<p class="is-style-thick-link-underline" data-aos="fade-up" data-aos-duration="1000"
-						data-aos-delay="200">With <strong style="color: darkgreen;">GO</strong><strong
-							style="color: #00a99d;">WASH</strong><strong style="color: red;">E</strong>, you can
-						schedule a wash now
-						and get a professional to your door in minutes. Rest assured your washer has been thoroughly
-						vetted, background checked, insured, and backed by our quality control assurance team. What
-						makes <strong style="color: darkgreen;">GO</strong><strong
-							style="color: #00a99d;">WASH</strong><strong style="color: red;">E</strong> really stand out
-						above the
-						rest is our custom pricing based on your comfort- Doorstep washing, <mark
-							style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-cadet-green-color">
-							Outlet washing, Hybrid plans
-							for car washing at your nearest location </mark> . With a wide variety of professionals
-						serving
-						different areas, we proudly stand by our motto, "Car Wash in Minutes!"
-						&nbsp;<a href="#" data-type="project" data-id="192"></a>&nbsp;<a href="#" data-type="project"
-							data-id="185"></a>&nbsp;<a href="#" data-type="project" data-id="198"></a>&nbsp;<a href="#"
-							data-type="project" data-id="200"></a>&nbsp;<a href="#" data-type="project"
-							data-id="184"></a>&nbsp;&nbsp;<a href="#" data-type="project" data-id="194"></a></p>
+			</div>
 
 
 
+			<div class="is-layout-flow wp-container-3 wp-block-group has-heading-2-font-size max-width-md-100 max-width-sm-100"
+				style="max-width:calc(920px*var(--scale));margin-top:calc(120px*var(--scale));margin-left:auto">
+				<p class="is-style-thick-link-underline" data-aos="fade-up" data-aos-duration="1000"
+					data-aos-delay="200">With <strong style="color: darkgreen;">GO</strong><strong
+						style="color: #00a99d;">WASH</strong><strong style="color: red;">E</strong>, you can
+					schedule a wash now
+					and get a professional to your door in minutes. Rest assured your washer has been thoroughly
+					vetted, background checked, insured, and backed by our quality control assurance team. What
+					makes <strong style="color: darkgreen;">GO</strong><strong
+						style="color: #00a99d;">WASH</strong><strong style="color: red;">E</strong> really stand out
+					above the
+					rest is our custom pricing based on your comfort- Doorstep washing, <mark
+						style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-cadet-green-color">
+						Outlet washing, Hybrid plans
+						for car washing at your nearest location </mark> . With a wide variety of professionals
+					serving
+					different areas, we proudly stand by our motto, "Car Wash in Minutes!"
+					&nbsp;<a href="#" data-type="project" data-id="192"></a>&nbsp;<a href="#" data-type="project"
+						data-id="185"></a>&nbsp;<a href="#" data-type="project" data-id="198"></a>&nbsp;<a href="#"
+						data-type="project" data-id="200"></a>&nbsp;<a href="#" data-type="project"
+						data-id="184"></a>&nbsp;&nbsp;<a href="#" data-type="project" data-id="194"></a></p>
+
+
+
+				<h2 class="is-style-thick-link-underline"
+					id="h-vast-and-complex-businesses-like-these-need-digital-experiences-that-are-just-as-people-friendly-as-they-are-robust-and-scalable"
+					data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Trusted by thousands of monthly
+					users, we make it easier than ever to get your car washed at home or at work,
+					<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-cadet-green-color">so
+						you can spend your time doing what
+						matters.</mark> The best mobile car wash app, <strong
+						style="color: darkgreen;">GO</strong><strong style="color: #00a99d;">WASH</strong><strong
+						style="color: red;">E</strong> sets itself apart by being a <mark
+						style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-cadet-green-color">true
+						auto wash detailing app.</mark>
+				</h2>
+
+
+
+
+
+
+
+				<div class="is-layout-flex wp-block-buttons" style="margin-top:calc(60px*var(--scale))"
+					data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+					<div class="wp-block-button is-style-simple-underline-link"><a href="#" style="font-size:50px;">Our
+							approach</a></div>
 					<h2 class="is-style-thick-link-underline"
-						id="h-vast-and-complex-businesses-like-these-need-digital-experiences-that-are-just-as-people-friendly-as-they-are-robust-and-scalable"
-						data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Trusted by thousands of monthly
-						users, we make it easier than ever to get your car washed at home or at work,
-						<mark style="background-color:rgba(0, 0, 0, 0)"
-							class="has-inline-color has-cadet-green-color">so you can spend your time doing what
-							matters.</mark> The best mobile car wash app, <strong
-							style="color: darkgreen;">GO</strong><strong style="color: #00a99d;">WASH</strong><strong
-							style="color: red;">E</strong> sets itself apart by being a <mark
-							style="background-color:rgba(0, 0, 0, 0)"
-							class="has-inline-color has-cadet-green-color">true auto wash detailing app.</mark>
+						id="h-through-challenging-core-assumptions-we-shape-the-products-and-services-that-improve-the-lives-of-thousands-every-single-day"
+						data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><mark
+							style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-cadet-green-color">
+							Doorstep Car Wash-</mark>
+						Book your car wash from the comfort of your home and get our washing
+						professional at your doorstep within minutes. We also provide monthly and hassle free
+						subscriptions for your car wash.We provide complete car wash and detailing service for all
+						models of high-end vehicles including sedans, MUVs, 5-seater SUVs, and 7-seater SUVs.
 					</h2>
-
-
-
-
-
-
-
-					<div class="is-layout-flex wp-block-buttons" style="margin-top:calc(60px*var(--scale))"
-						data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-						<div class="wp-block-button is-style-simple-underline-link"><a href="#"
-								style="font-size:50px;">Our
-								approach</a></div>
-						<h2 class="is-style-thick-link-underline"
-							id="h-through-challenging-core-assumptions-we-shape-the-products-and-services-that-improve-the-lives-of-thousands-every-single-day"
-							data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><mark
-								style="background-color:rgba(0, 0, 0, 0)"
-								class="has-inline-color has-cadet-green-color">
-								Doorstep Car Wash-</mark>
-							Book your car wash from the comfort of your home and get our washing
-							professional at your doorstep within minutes. We also provide monthly and hassle free
-							subscriptions for your car wash.We provide complete car wash and detailing service for all
-							models of high-end vehicles including sedans, MUVs, 5-seater SUVs, and 7-seater SUVs.
-						</h2>
-						<h2 class="is-style-thick-link-underline"
-							id="h-through-challenging-core-assumptions-we-shape-the-products-and-services-that-improve-the-lives-of-thousands-every-single-day"
-							data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><mark
-								style="background-color:rgba(0, 0, 0, 0)"
-								class="has-inline-color has-cadet-green-color">
-								Outlet Car Wash-</mark> Get our outlet car wash appointment booked from our website and
-							app or mobile
-							to avoid queue waiting time and save your precious time for your family and friends.
-						</h2>
-						<h2 class="is-style-thick-link-underline"
-							id="h-through-challenging-core-assumptions-we-shape-the-products-and-services-that-improve-the-lives-of-thousands-every-single-day"
-							data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><mark
-								style="background-color:rgba(0, 0, 0, 0)"
-								class="has-inline-color has-cadet-green-color">
-								Hybrid Car Wash Plan-</mark> With our hybrid car wash plan you get a monthly doorstep
-							car wash along
-							with outlet car wash as a perk at the most competitive market price without queue waiting
-							time.
-						</h2>
-					</div>
+					<h2 class="is-style-thick-link-underline"
+						id="h-through-challenging-core-assumptions-we-shape-the-products-and-services-that-improve-the-lives-of-thousands-every-single-day"
+						data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><mark
+							style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-cadet-green-color">
+							Outlet Car Wash-</mark> Get our outlet car wash appointment booked from our website and
+						app or mobile
+						to avoid queue waiting time and save your precious time for your family and friends.
+					</h2>
+					<h2 class="is-style-thick-link-underline"
+						id="h-through-challenging-core-assumptions-we-shape-the-products-and-services-that-improve-the-lives-of-thousands-every-single-day"
+						data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><mark
+							style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-cadet-green-color">
+							Hybrid Car Wash Plan-</mark> With our hybrid car wash plan you get a monthly doorstep
+						car wash along
+						with outlet car wash as a perk at the most competitive market price without queue waiting
+						time.
+					</h2>
 				</div>
+			</div>
 
 			</div>
 		</section>
@@ -446,9 +603,8 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 						<!-- https://bb.agency/project/wonde/ -->
 						<a href="#" class="archived-project__content-wrapper">
 							<div class="archived-project__feat-wrapper">
-								<img width="1227" height="860" src="src/hybrid.jpg"
-									class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-									sizes="(max-width: 1227px) 100vw, 1227px" />
+								<img width="1227" height="860" src="src/hybrid.jpg" class="attachment-full size-full"
+									alt="" decoding="async" loading="lazy" sizes="(max-width: 1227px) 100vw, 1227px" />
 							</div>
 							<!-- rcset="https://bb.agency/wp-content/uploads/2022/09/Wonde-List-Large.webp 1227w, https://bb.agency/wp-content/uploads/2022/09/Wonde-List-Large-678x475.webp 678w, https://bb.agency/wp-content/uploads/2022/09/Wonde-List-Large-317x222.webp 317w, https://bb.agency/wp-content/uploads/2022/09/Wonde-List-Large-438x307.webp 438w, https://bb.agency/wp-content/uploads/2022/09/Wonde-List-Large@2x.webp 2454w, https://bb.agency/wp-content/uploads/2022/09/Wonde-List-Large-678x475@2x.webp 1356w, https://bb.agency/wp-content/uploads/2022/09/Wonde-List-Large-317x222@2x.webp 634w, https://bb.agency/wp-content/uploads/2022/09/Wonde-List-Large-438x307@2x.webp 876w" -->
 							<div class="archived-project__title-wrapper">
@@ -509,10 +665,8 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 
 						<a href="#" class="archived-project__content-wrapper">
 							<div class="archived-project__feat-wrapper">
-								<img width="1227" height="860"
-									src="src/close-up-car-care-process.jpg"
+								<img width="1227" height="860" src="src/close-up-car-care-process.jpg"
 									class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-									
 									sizes="(max-width: 1227px) 100vw, 1227px" />
 							</div>
 							<!-- srcset="https://bb.agency/wp-content/uploads/2022/09/ShipBob-List-Large.webp 1227w, https://bb.agency/wp-content/uploads/2022/09/ShipBob-List-Large-678x475.webp 678w, https://bb.agency/wp-content/uploads/2022/09/ShipBob-List-Large-317x222.webp 317w, https://bb.agency/wp-content/uploads/2022/09/ShipBob-List-Large-438x307.webp 438w, https://bb.agency/wp-content/uploads/2022/09/ShipBob-List-Large@2x.webp 2454w, https://bb.agency/wp-content/uploads/2022/09/ShipBob-List-Large-317x222@2x.webp 634w, https://bb.agency/wp-content/uploads/2022/09/ShipBob-List-Large-438x307@2x.webp 876w" -->
@@ -531,12 +685,11 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 
 						<a href="#" class="archived-project__content-wrapper">
 							<div class="archived-project__feat-wrapper">
-								<img width="592" height="592"
-									src="src/man-washing-his-car-garage.jpg" 
+								<img width="592" height="592" src="src/man-washing-his-car-garage.jpg"
 									class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-										sizes="(max-width: 592px) 100vw, 592px" />
-										<!-- srcset="https://bb.agency/wp-content/uploads/2022/09/Termgrid-List-Small.webp 592w, https://bb.agency/wp-content/uploads/2022/09/Termgrid-List-Small-317x317.webp 317w, https://bb.agency/wp-content/uploads/2022/09/Termgrid-List-Small-438x438.webp 438w, https://bb.agency/wp-content/uploads/2022/09/Termgrid-List-Small@2x.webp 1184w" -->
-								
+									sizes="(max-width: 592px) 100vw, 592px" />
+								<!-- srcset="https://bb.agency/wp-content/uploads/2022/09/Termgrid-List-Small.webp 592w, https://bb.agency/wp-content/uploads/2022/09/Termgrid-List-Small-317x317.webp 317w, https://bb.agency/wp-content/uploads/2022/09/Termgrid-List-Small-438x438.webp 438w, https://bb.agency/wp-content/uploads/2022/09/Termgrid-List-Small@2x.webp 1184w" -->
+
 							</div>
 
 							<div class="archived-project__title-wrapper">
@@ -554,10 +707,8 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 
 						<a href="#" class="archived-project__content-wrapper">
 							<div class="archived-project__feat-wrapper">
-								<img width="717" height="813"
-									src="src/chemicals.jpg"
-									class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-									sizes="(max-width: 717px) 100vw, 717px" />
+								<img width="717" height="813" src="src/chemicals.jpg" class="attachment-full size-full"
+									alt="" decoding="async" loading="lazy" sizes="(max-width: 717px) 100vw, 717px" />
 							</div>
 
 							<div class="archived-project__title-wrapper">
@@ -576,10 +727,8 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 
 						<a href="#" class="archived-project__content-wrapper">
 							<div class="archived-project__feat-wrapper">
-								<img width="1227" height="860"
-									src="src/cosmetics.jpg"
-									class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-									sizes="(max-width: 1227px) 100vw, 1227px" />
+								<img width="1227" height="860" src="src/cosmetics.jpg" class="attachment-full size-full"
+									alt="" decoding="async" loading="lazy" sizes="(max-width: 1227px) 100vw, 1227px" />
 							</div>
 
 							<div class="archived-project__title-wrapper">
@@ -653,8 +802,7 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 
 							<div class="is-layout-flex wp-block-buttons" style="margin-top:calc(40px*var(--scale))">
 								<div class="wp-block-button is-style-simple-underline-link"><a
-										class="wp-block-button__link wp-element-button"
-										href="#">About us</a></div>
+										class="wp-block-button__link wp-element-button" href="#">About us</a></div>
 							</div>
 						</div>
 					</div>
@@ -736,8 +884,7 @@ src="https://www.facebook.com/tr?id=860682571855192&ev=PageView&noscript=1"
 									height="20" alt="client logo"> </a>
 
 							<div class="archived-client__description">
-								We have a 5+ years ongoing partnership with <strong><a
-										href="#" data-type="project"
+								We have a 5+ years ongoing partnership with <strong><a href="#" data-type="project"
 										data-id="198">Progressive</a></strong> to help build a quote management system
 								for agents and homeowners. </div>
 
