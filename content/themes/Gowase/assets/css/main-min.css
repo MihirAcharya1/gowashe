@@ -9372,7 +9372,7 @@
     .me-xxl-15 {
         margin-right: .9375rem !important
     }
-    
+
     .me-xxl-20 {
         margin-right: 1.25rem !important
     }
@@ -10804,7 +10804,7 @@ progress {
     --scale: 1;
     --body-bg: #fff;
     --body-color: #042825;
-    --transition-duration: 100ms
+    --transition-duration: 600ms
 }
 
 @media(min-width: 1500px) {
@@ -10837,12 +10837,11 @@ progress {
     }
 }
 
-
 body {
     margin: 0;
     padding: 0;
     position: relative;
-   
+    font-family: "Lota Grotesque";
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.33;
@@ -10963,8 +10962,6 @@ body.single-project .testimonial-content {
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: #042825;
-    padding-top: 15px;
     -webkit-transition: background var(--transition-duration) ease, -webkit-transform var(--transition-duration) ease;
     transition: background var(--transition-duration) ease, -webkit-transform var(--transition-duration) ease;
     -o-transition: transform var(--transition-duration) ease, background var(--transition-duration) ease;
@@ -22677,9 +22674,9 @@ button.swiper-pagination-bullet {
     display: inline
 }
 
-.wp-front .archived-project__description:before,
+.wp-front .:before,
 .wp-front .related-project__description:before {
-    content: " â€” "
+    content: "-"
 }
 
 .wp-front .coming-soon-btn {
